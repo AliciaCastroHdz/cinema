@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieMenuViewController" customModule="cinema" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="QcU-PG-wDo" id="pyb-AX-HkI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fi9-i4-ECA" userLabel="NavBar">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Películas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GvJ-9j-Dlx">
+                            <rect key="frame" x="169" y="9.5" width="76.5" height="25"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                            <color key="textColor" red="0.3333382607" green="0.33332449199999997" blue="0.33333384989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="GvJ-9j-Dlx" firstAttribute="centerY" secondItem="fi9-i4-ECA" secondAttribute="centerY" id="3Gc-1R-7pl"/>
+                        <constraint firstAttribute="height" constant="44" id="D51-s2-71X"/>
+                        <constraint firstItem="GvJ-9j-Dlx" firstAttribute="centerX" secondItem="fi9-i4-ECA" secondAttribute="centerX" id="gxB-Ko-uP3"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QcU-PG-wDo">
+                    <rect key="frame" x="0.0" y="54" width="414" height="842"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vYq-4w-ju3" customClass="CustomVerticalCollectionViewLayout" customModule="cinema" customModuleProvider="target">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navbar_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="5wF-1P-fbw">
+                    <rect key="frame" x="0.0" y="43" width="414" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="561-9F-Gp8"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QcU-PG-wDo" secondAttribute="bottom" id="04H-Pg-jOn"/>
+                <constraint firstItem="fi9-i4-ECA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Bg7-km-f9N"/>
+                <constraint firstItem="5wF-1P-fbw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Eop-Ga-vzo"/>
+                <constraint firstItem="QcU-PG-wDo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HFw-tV-ZDq"/>
+                <constraint firstItem="5wF-1P-fbw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Kyc-cz-xZl"/>
+                <constraint firstItem="QcU-PG-wDo" firstAttribute="top" secondItem="fi9-i4-ECA" secondAttribute="bottom" constant="10" id="XvD-CY-22y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fi9-i4-ECA" secondAttribute="trailing" id="ZjL-G6-2QS"/>
+                <constraint firstItem="5wF-1P-fbw" firstAttribute="top" secondItem="fi9-i4-ECA" secondAttribute="bottom" constant="-1" id="lpY-Gb-vYt"/>
+                <constraint firstItem="fi9-i4-ECA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sW7-Ae-kUP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QcU-PG-wDo" secondAttribute="trailing" id="yqV-3m-lgT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="129"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navbar_shadow" width="526.5" height="6"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="MovieCollectionViewCell" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="cinema" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="400"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DFS-86-UT2">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="400"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TG8-lX-PFY" userLabel="Image overlay">
+                        <rect key="frame" x="0.0" y="330" width="200" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Maléfica: Dueña del mal" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrt-fm-g5T">
+                                <rect key="frame" x="5" y="0.0" width="190" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="16-oct-2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXd-PS-aIW">
+                                <rect key="frame" x="5" y="46" width="147.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star_empty" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-HE-U3W">
+                                <rect key="frame" x="152.5" y="48" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="uxB-53-Dr4"/>
+                                    <constraint firstAttribute="width" secondItem="YAB-HE-U3W" secondAttribute="height" multiplier="1:1" id="wx2-Ie-u1N"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="7.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dms-Rq-Axl">
+                                <rect key="frame" x="172.5" y="46" width="22.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79323630136986301" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="0Fk-ff-ZAS"/>
+                            <constraint firstAttribute="trailing" secondItem="vrt-fm-g5T" secondAttribute="trailing" constant="5" id="6V4-As-PzP"/>
+                            <constraint firstItem="YAB-HE-U3W" firstAttribute="centerY" secondItem="dms-Rq-Axl" secondAttribute="centerY" id="9gF-N2-7u6"/>
+                            <constraint firstItem="FXd-PS-aIW" firstAttribute="top" secondItem="dms-Rq-Axl" secondAttribute="top" id="AOk-6D-U00"/>
+                            <constraint firstAttribute="trailing" secondItem="dms-Rq-Axl" secondAttribute="trailing" constant="5" id="Gsd-zo-7rY"/>
+                            <constraint firstItem="vrt-fm-g5T" firstAttribute="leading" secondItem="TG8-lX-PFY" secondAttribute="leading" constant="5" id="Izu-FQ-Tn1"/>
+                            <constraint firstAttribute="bottom" secondItem="FXd-PS-aIW" secondAttribute="bottom" constant="5" id="N3s-5F-2rv"/>
+                            <constraint firstItem="YAB-HE-U3W" firstAttribute="leading" secondItem="FXd-PS-aIW" secondAttribute="trailing" id="WLP-ck-Q4t"/>
+                            <constraint firstItem="FXd-PS-aIW" firstAttribute="leading" secondItem="TG8-lX-PFY" secondAttribute="leading" constant="5" id="dbp-r0-pK8"/>
+                            <constraint firstItem="dms-Rq-Axl" firstAttribute="leading" secondItem="YAB-HE-U3W" secondAttribute="trailing" constant="5" id="kcO-2l-01o"/>
+                            <constraint firstItem="vrt-fm-g5T" firstAttribute="top" secondItem="TG8-lX-PFY" secondAttribute="top" id="pEW-FG-V6g"/>
+                            <constraint firstItem="FXd-PS-aIW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vrt-fm-g5T" secondAttribute="bottom" constant="10" id="qzQ-q2-BUw"/>
+                            <constraint firstAttribute="bottom" secondItem="dms-Rq-Axl" secondAttribute="bottom" constant="5" id="utC-K5-oBc"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="God-ND-GbV">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="400"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="18c-IA-FZX">
+                                <rect key="frame" x="90" y="190" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="18c-IA-FZX" firstAttribute="centerX" secondItem="God-ND-GbV" secondAttribute="centerX" id="qaA-iU-QK3"/>
+                            <constraint firstItem="18c-IA-FZX" firstAttribute="centerY" secondItem="God-ND-GbV" secondAttribute="centerY" id="x5Q-3r-0kO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="DFS-86-UT2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1Lw-Y8-mpH"/>
+                <constraint firstItem="God-ND-GbV" firstAttribute="centerX" secondItem="DFS-86-UT2" secondAttribute="centerX" id="9ve-C9-4Qd"/>
+                <constraint firstItem="God-ND-GbV" firstAttribute="bottom" secondItem="DFS-86-UT2" secondAttribute="bottom" id="DQa-mt-hJZ"/>
+                <constraint firstItem="God-ND-GbV" firstAttribute="trailing" secondItem="DFS-86-UT2" secondAttribute="trailing" id="DhH-K8-Y4X"/>
+                <constraint firstItem="TG8-lX-PFY" firstAttribute="leading" secondItem="DFS-86-UT2" secondAttribute="leading" id="I6d-yl-Nwg"/>
+                <constraint firstItem="TG8-lX-PFY" firstAttribute="bottom" secondItem="DFS-86-UT2" secondAttribute="bottom" id="JcU-Jm-GMd"/>
+                <constraint firstAttribute="trailing" secondItem="DFS-86-UT2" secondAttribute="trailing" id="OyN-4y-nMp"/>
+                <constraint firstItem="TG8-lX-PFY" firstAttribute="trailing" secondItem="DFS-86-UT2" secondAttribute="trailing" id="RgZ-Bv-ujn"/>
+                <constraint firstItem="DFS-86-UT2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cAA-q1-h18"/>
+                <constraint firstAttribute="bottom" secondItem="DFS-86-UT2" secondAttribute="bottom" id="uOB-0s-j8B"/>
+                <constraint firstItem="God-ND-GbV" firstAttribute="top" secondItem="DFS-86-UT2" secondAttribute="top" id="ynm-BP-VQG"/>
+            </constraints>
+            <connections>
+                <outlet property="dateLabel" destination="FXd-PS-aIW" id="kEw-3u-wyX"/>
+                <outlet property="imageView" destination="DFS-86-UT2" id="ugs-Lw-5Dd"/>
+                <outlet property="loadingView" destination="God-ND-GbV" id="c37-RW-JXz"/>
+                <outlet property="overlayView" destination="TG8-lX-PFY" id="RgK-ZF-qTG"/>
+                <outlet property="scoreLabel" destination="dms-Rq-Axl" id="Sfx-Bl-0kE"/>
+                <outlet property="titleLabel" destination="vrt-fm-g5T" id="WFb-o5-7wm"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_star_empty" width="11.5" height="11.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
